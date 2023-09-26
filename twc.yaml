@@ -33,6 +33,7 @@ external_components:
 twc-controller:
   id: twc
   uart_id: twc_uart
+  passive_mode: 1
   min_current: 6
   max_current: 32
   set_current: 6
