@@ -53,6 +53,7 @@ CONF_TWCID = "twc_id"
 ICON_CURRENT_AC = "mdi:current-ac"
 ICON_CAR = "mdi:car"
 ICON_NUMERIC = "mdi:numeric"
+ICON_COUNTER = "mdi:counter"
 ICON_LIGHTNING_BOLT = "mdi:lightning-bolt"
 
 AUTO_LOAD = ["number", "sensor", "text_sensor"]
@@ -122,7 +123,7 @@ CONFIG_SCHEMA = cv.All(
             ),
             cv.Optional(CONF_TOTAL_KWH): sensor.sensor_schema(
                 unit_of_measurement=UNIT_KILOWATT_HOURS,
-                icon=ICON_CURRENT_AC,
+                icon=ICON_COUNTER,
                 accuracy_decimals=0,
                 device_class=DEVICE_CLASS_ENERGY,
                 state_class=STATE_CLASS_TOTAL_INCREASING,
