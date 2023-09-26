@@ -40,6 +40,18 @@ external_components:
       #components: [twc-controller]
   - source: components
 
+
+sensor:
+  - platform: dht
+    pin: 18
+    temperature:
+      name: "Garasje Temperature"
+    humidity:
+      name: "Garasje Humidity"
+    update_interval: 120s
+    model: AM2302
+
+
 twc-controller:
   id: twc
   uart_id: twc_uart
