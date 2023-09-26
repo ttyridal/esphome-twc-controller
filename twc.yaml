@@ -26,8 +26,9 @@ uart:
   stop_bits: 1
 
 external_components:
-  - source: github://jnicolson/esphome-twc-controller
-    components: [twc-controller]
+  #- source: github://jnicolson/esphome-twc-controller
+      #components: [twc-controller]
+  - source: components
 
 twc-controller:
   id: twc
